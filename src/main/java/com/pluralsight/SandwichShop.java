@@ -8,17 +8,31 @@ public class SandwichShop {
         Scanner scan = new Scanner(System.in);
 
         // Sandwiches
-        double regular = 5.45;
-        double large = 8.95;
+        double regularprice = 5.45;
+        double largeprice = 8.95;
 
         //defining sandwich sizes.
-        char regularprice = 'R';
-        char largeprice = 'L';
+        char regular = 'R';
+        char large = 'L';
 
         //Prompting for what size
+        System.out.println("Enter sandwich Size, R for Regular and L for Large");
+                char size = scan.next().charAt(0);
 
-        System.out.println("Enter sandwich Size, R for Regular and L for Large")
-                char size1 = scan.next().charAt(0);
+                // Size chosen
+        double price =0;
+        if (size == 'R'){
+            price = regularprice;
+            System.out.println("One Regular!");
+        }else if (size == 'L'){
+            price = largeprice;
+            System.out.println("One Large!");
+        }else {
+            System.out.println("Sorry Regular or Large.");
+        }
+        //Age prompt
+        System.out.println("Whats your age");
+        int age = scan.nextInt();
 
 
 
