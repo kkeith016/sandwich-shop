@@ -14,7 +14,11 @@ public class SandwichShop {
         //defining sandwich sizes.
         char regularprice = 'R';
         char largeprice = 'L';
-        char size = scan.next().charAt(0);
+
+        //Prompting for what size
+
+        System.out.println("Enter sandwich Size, R for Regular and L for Large")
+                char size1 = scan.next().charAt(0);
 
 
 
