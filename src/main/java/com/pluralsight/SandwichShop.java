@@ -10,6 +10,8 @@ public class SandwichShop {
         // Sandwiches
         double regularprice = 5.45;
         double largeprice = 8.95;
+        double loadedregular = 1.00;
+        double loadedlarge = 1.75;
 
         //defining sandwich sizes.
         char regular = 'R';
@@ -33,6 +35,18 @@ public class SandwichShop {
         }else {
             System.out.println("Sorry Regular or Large.");
         }
+        // Loaded Question
+        System.out.println("Would you like your sandwich loaded? Yes or No?");
+        String loaded = scan.nextLine().trim().toLowerCase();
+
+        if (loaded.equals("yes")) {
+            if (size == 'R') {
+                price += loadedregular;
+            } else if (size == 'L') {
+                price += loadedlarge;
+            }
+        }
+
         //Age prompt
         System.out.println("Whats your age?");
         int age = scan.nextInt();
