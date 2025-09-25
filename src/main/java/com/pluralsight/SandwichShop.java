@@ -20,6 +20,7 @@ public class SandwichShop {
         //Prompting for what size
         System.out.println("Enter sandwich Size, R for Regular and L for Large");
                 char size = scan.next().charAt(0);
+        scan.nextLine();
 
 // Ignoring upper or lower case. Ask more for understanding.
         size = Character.toUpperCase(size);
@@ -35,9 +36,11 @@ public class SandwichShop {
         }else {
             System.out.println("Sorry Regular or Large.");
         }
+
         // Loaded Question
         System.out.println("Would you like your sandwich loaded? Yes or No?");
         String loaded = scan.nextLine().trim().toLowerCase();
+        scan.nextLine();
 
         if (loaded.equals("yes")) {
             if (size == 'R') {
