@@ -34,6 +34,15 @@ public class SandwichShop {
         System.out.println("Whats your age");
         int age = scan.nextInt();
 
+        // Calculate Discount
+        double discount =0;
+        if (age <= 17);{
+            discount = 0.10;
+        }else if (age >= 65) {
+            discount = 0.20;
+        }
+double total = price - (price*discount);
+
 
 
 
